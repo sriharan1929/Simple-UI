@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KTM 390 Duke</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="top">
+    <div class="ktm">
+
+        <div class="ktm-text">
+            <h1>Now with cruise control KTM 390 Duke</h1>
+            <p>
+                Bringing exceptional agility, lightweight handling, and punchy performance to the street,
+                this middle-weight bruiser is ready to take on any twists or turns.
+            </p>
+
+            <div class="top-actions">
+                <button class="btn">BUY IT NOW</button>
+
+                <div class="toggle">
+                    <span class="toggle-circle"></span>
+                    <span class="toggle-text">Turn me light</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="top-image">
+            <img src="https://i.pinimg.com/1200x/8d/b8/af/8db8af0c4b25ce1bb0b60f3e7f9b4380.jpg" alt="KTM Duke">
+        </div>
+
+    </div>
+</section>
+
+<section class="product-section">
+    <h2>The Product</h2>
+    <p class="product-desc">
+        Packing state-of-the-art rider aids, an all-new frame, adjustable suspension and aggressive new looks,
+        the 2024 KTM 390 Duke wears the crown when it comes to carving up the asphalt.
+    </p>
+
+    <div class="product-visual">
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1656767330683-5798c42acc18?q=80&w=2127&auto=format&fit=crop" alt="Product Image">
+        </div>
+    </div>
+</section>
+
+<section class="details-section">
+    <div class="details-container">
+
+        <div class="detail-item">
+            <h3>CRUISE CONTROL</h3>
+            <div class="title-line"></div>
+            <p>
+                Cruise control increases comfort on long journeys with consistent throttle delivery.
+            </p>
+        </div>
+
+        <div class="detail-item">
+            <h3>ALL IN AGILITY</h3>
+            <div class="title-line"></div>
+            <p>
+                Advanced suspension and lightweight chassis provide razor-sharp handling.
+            </p>
+        </div>
+
+        <div class="detail-item">
+            <h3>STYLE AND FUNCTION</h3>
+            <div class="title-line"></div>
+            <p>
+                Aggressive styling combined with refined ergonomics for everyday usability.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="divider-line"></div>
+
+    <div class="bottom">
+        <h2>Get it and Switch</h2>
+        <p>Own the road, feel the freedom — buy a bike and ride your story.</p>
+        <button class="btn">BUY IT NOW</button>
+    </div>
+</section>
+
+<script>
+    const toggle = document.querySelector(".toggle");
+    const circle = document.querySelector(".toggle-circle");
+    const text = document.querySelector(".toggle-text");
+
+    toggle.addEventListener("click", function () {
+        document.body.classList.toggle("light-mode");
+        circle.classList.toggle("active");
+
+        if (document.body.classList.contains("light-mode")) {
+            text.textContent = "Light mode on";
+        } else {
+            text.textContent = "Turn me light";
+        }
+    });
+</script>
+
+
+</body>
+</html>
