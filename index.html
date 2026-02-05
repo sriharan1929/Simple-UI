@@ -3,54 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <title>KTM 390 Duke</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<section class="top">
-    <div class="ktm">
+<section class="top py-5 min-vh-100 d-flex align-items-center">
+    <div class="container">
+        <div class="row align-items-center gy-5">
 
-        <div class="ktm-text">
-            <h1>Now with cruise control KTM 390 Duke</h1>
-            <p>
-                Bringing exceptional agility, lightweight handling, and punchy performance to the street,
-                this middle-weight bruiser is ready to take on any twists or turns.
-            </p>
+            <div class="col-lg-6">
+                <div class="ktm-text">
+                    <h1>Now with cruise control KTM 390 Duke</h1>
+                    <p>
+                        Bringing exceptional agility, lightweight handling, and punchy performance to the street,
+                        this middle-weight bruiser is ready to take on any twists or turns.
+                    </p>
 
-            <div class="top-actions">
-                <button class="btn">BUY IT NOW</button>
+                    <div class="top-actions">
+                        <button class="btn btn-primary">BUY IT NOW</button>
 
-                <div class="toggle">
-                    <span class="toggle-circle"></span>
-                    <span class="toggle-text">Turn me light</span>
+                        <div class="toggle">
+                            <span class="toggle-circle"></span>
+                            <span class="toggle-text">Turn me light</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="top-image">
-            <img src="https://i.pinimg.com/1200x/8d/b8/af/8db8af0c4b25ce1bb0b60f3e7f9b4380.jpg" alt="KTM Duke">
-        </div>
+            <div class="col-lg-6 text-center">
+                <img
+                    src="https://i.pinimg.com/1200x/8d/b8/af/8db8af0c4b25ce1bb0b60f3e7f9b4380.jpg"
+                    alt="KTM Duke"
+                    class="img-fluid hero-image">
+            </div>
 
-    </div>
-</section>
-
-<section class="product-section">
-    <h2>The Product</h2>
-    <p class="product-desc">
-        Packing state-of-the-art rider aids, an all-new frame, adjustable suspension and aggressive new looks,
-        the 2024 KTM 390 Duke wears the crown when it comes to carving up the asphalt.
-    </p>
-
-    <div class="product-visual">
-        <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1656767330683-5798c42acc18?q=80&w=2127&auto=format&fit=crop" alt="Product Image">
         </div>
     </div>
 </section>
 
-<section class="details-section">
-    <div class="details-container">
+<section class="product-section py-5 text-center">
+    <div class="container">
+        <h2>The Product</h2>
+        <p class="product-desc">
+            Packing state-of-the-art rider aids, an all-new frame, adjustable suspension and aggressive new looks,
+            the 2024 KTM 390 Duke wears the crown when it comes to carving up the asphalt.
+        </p>
+
+        <div class="product-visual">
+            <div class="product-card">
+                <img
+                    src="https://images.unsplash.com/photo-1656767330683-5798c42acc18?q=80&w=2127&auto=format&fit=crop"
+                    alt="Product Image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="details-section py-5">
+    <div class="container details-container">
 
         <div class="detail-item">
             <h3>CRUISE CONTROL</h3>
@@ -76,14 +89,14 @@
             </p>
         </div>
 
-    </div>
+        <div class="divider-line"></div>
 
-    <div class="divider-line"></div>
+        <div class="bottom">
+            <h2>Get it and Switch</h2>
+            <p>Own the road, feel the freedom — buy a bike and ride your story.</p>
+            <button class="btn btn-primary">BUY IT NOW</button>
+        </div>
 
-    <div class="bottom">
-        <h2>Get it and Switch</h2>
-        <p>Own the road, feel the freedom — buy a bike and ride your story.</p>
-        <button class="btn">BUY IT NOW</button>
     </div>
 </section>
 
@@ -103,7 +116,6 @@
         }
     });
 </script>
-
 
 </body>
 </html>
